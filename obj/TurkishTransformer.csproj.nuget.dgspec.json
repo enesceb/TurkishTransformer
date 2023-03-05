@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Enes Projects\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer.csproj": {}
+  },
+  "projects": {
+    "D:\\Enes Projects\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Enes Projects\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer.csproj",
+        "projectName": "TurkishTransformer",
+        "projectPath": "D:\\Enes Projects\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer.csproj",
+        "packagesPath": "C:\\Users\\Tunca\\.nuget\\packages\\",
+        "outputPath": "D:\\Enes Projects\\TurkishTransformer\\TurkishTransformer\\TurkishTransformer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Tunca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\P2Cloud": {},
+          "D:\\Enes Projects\\P2C_Ford_V710\\P2C_Ford_V710": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/AltisTeknoloji/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
