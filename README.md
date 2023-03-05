@@ -26,12 +26,12 @@ IEnumerable kullanımının sebebi, metotların birbirine bağımlılığı ve l
 ### Usage
 
 ``` csharp
-
-  var transformer = TransformerFactory.Create(TransformerFactory.NameOfInstance.TurkishTransformer) as TurkishTransformer;
-   string input = "Elli altı bin lira kredi alıp üç yılda geri ödeyeceğim"          
+// Crate Instance using Factory 
+var transformer = TransformerFactory.Create(TransformerFactory.NameOfInstance.TurkishTransformer) as TurkishTransformer;
+// Specifying an input value
+string input = "Elli altı bin lira kredi alıp üç yılda geri ödeyeceğim"          
 // converting the input 
 var output = transformer.Translate(input);
-            return Ok(new { Output = output });
-// 56000 lira kredi alıp 3 yılda geri ödeyeceğim 
-
+return Ok(new { Output = output });
+//Output = 56000 lira kredi alıp 3 yılda geri ödeyeceğim 
 ```
