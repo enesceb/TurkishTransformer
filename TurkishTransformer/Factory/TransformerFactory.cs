@@ -15,7 +15,6 @@
                 case NameOfInstance.TurkishTransformer:
                     _transformer = new TurkishTransformer();
                     break;
-
                 default:
                     break;
 
