@@ -11,7 +11,7 @@ namespace TurkishTransformer
         {
             if (string.IsNullOrEmpty(words))
             {
-                return new List<string>();
+                return Enumerable.Empty<string>();
             }
 
             int signatureFlag;
