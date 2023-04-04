@@ -22,10 +22,6 @@ Son olarak, "Translate" yöntemi, "ConvertToNumbers" yöntemini çağırır ve e
 
 -GetDigits(IEnumerable<long> numbers, int signatureFlag = 1) metodu, sayıları birleştirerek son sayısal değeri hesaplar. Bu hesaplama işlemi, percentile ve result adında iki değişken kullanarak yapılır. percentile, sayının yüzler, binler, milyonlar gibi basamaklarına karşılık gelirken, result ise hesaplanan sonuç değerini tutar.
 
-## Neden IEnumerable kullanılmıştır?
-IEnumerable kullanımının sebebi, metotların birbirine bağımlılığı ve liste işlemlerinde kolaylık sağlamasıdır. ConvertToNumbers metodu, girdi dizesini Regex sınıfı kullanarak kelimelere ayırır ve her kelimenin sayıya dönüştürülebilir olup olmadığını belirlemek için Numbers sözlüğünü kullanır. Sayıya dönüştürülebilir olan kelimelerin sayı değerleri GetDigits() metodu tarafından kullanılmak üzere ayrı bir liste halinde saklanır. Bu nedenle, IEnumerable kullanımı, metotlar arasındaki veri geçişini kolaylaştırır ve liste işlemlerinin yapılmasını sağlar.
-
-
 
 
 ### [EN] - English Description 
@@ -50,9 +46,6 @@ Finally, the "Translate" method calls the "ConvertToNumbers" method and replaces
 The -ConvertToNumbers(string words) method splits the given input string into parts and converts each part to a number. During this process, word matches within the string are found using the Regex class and they are stored in a separate list. The Numbers dictionary is then used to determine whether each word is convertible to numbers. The number values of words that can be converted to numbers are stored in a separate list and these numbers are combined into a single number using the GetDigits() method.
 
 The -GetDigits(IEnumerable<long> numbers, int signatureFlag = 1) method calculates the final numeric value by concatenating the numbers. This calculation is done using two variables named percentile and result. percentile corresponds to the digits of the number such as hundreds, thousands, millions, while result holds the calculated result value.
-
-## Why is IEnumerable used?
-The reason for using IEnumerable is the interdependence of methods and ease of list operations. The ConvertToNumbers method splits the input string into words using the Regex class and uses the Numbers dictionary to determine whether each word can be converted to a number. The number values of words that can be converted to numbers are stored in a separate list for use by the GetDigits() method. Therefore, the use of IEnumerable facilitates data migration between methods and enables list operations.
 
 
 ### Usage
